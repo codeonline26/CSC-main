@@ -5,6 +5,7 @@ import { dirname } from 'node:path';
 
 let mainConfig = {};
 
+
 try {
   mainConfig = JSON.parse(readFileSync(
     './config.json',
