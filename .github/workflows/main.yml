@@ -14,9 +14,12 @@ jobs:
     steps:
     # 使用别人的action
     - uses: actions/checkout@v2
+    - name: npm i
+      # 步骤执行指令
+      run: npm install npm@5.5.1 -g
     # 步骤名称
     - name: npm install
       # 步骤执行指令
       run: npm install
     - name: npm build
-      run: npm help
+      run: npm run build
